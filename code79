@@ -1,0 +1,14 @@
+package codeUp;
+
+import java.util.Scanner;
+
+public class code79 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char ch;
+
+        do {
+            ch = sc.next().charAt(0);
+        } while ( ch != 'q');
+    }
+}
