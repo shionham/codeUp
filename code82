@@ -1,0 +1,29 @@
+package codeUp;
+
+import java.util.Scanner;
+
+public class code82 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("A~F 중 하나를 입력하세요");
+        String input = sc.nextLine().toUpperCase();
+
+        if (input.matches("[A-F]")) {
+            int base = Integer.parseInt(input, 16); // 입력을 16진수로 해석하여 10진수로 변환
+
+            for (int i = 1; i <= base; i++) {
+                for (int j = 1; j <= base; j++) {
+                    int product = i * j;
+                    System.out.printf("%X * %X = %X\n", i, j, product);
+                }
+                System.out.println();
+            }
+        } else {
+            System.out.println("잘못된 입력입니다. 다시 입력하세요");
+        }
+        sc.close();
+
+
+    }
+}
