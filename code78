@@ -1,0 +1,23 @@
+package codeUp;
+
+import java.util.Scanner;
+
+public class code78 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // 1부터 입력된 수까지 짝수의 합 구하기
+
+        int n = sc.nextInt();
+        int sum = 0;
+
+        for (int i = 0; i <= n; i++) {
+            if (i % 2 == 0) {
+                sum += i;
+
+            }
+
+        }   System.out.println(sum);
+    }
+}
+
